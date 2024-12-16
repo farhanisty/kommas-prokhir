@@ -15,10 +15,20 @@ export default function AddCustomer() {
         <h1 className="font-semibold mb-5">Masukkan Data Pelanggan</h1>
         <form>
           <InputForm
-            placeholder="Masukkan nama"
-            type="text"
-            label="Nama Pelanggan"
-          />
+          placeholder="Masukkan nama"
+          type="text"
+          label="Nama Pelanggan"
+        />
+        <InputForm
+          placeholder="Masukkan Nomor Whatsapp"
+          type="text"
+          label="Nomor Whatsapp "
+        />
+      <InputForm
+          placeholder="Masukkan Alamat"
+          type="text"
+          label="Alamat"
+        />
           <PrimaryButton className="mt-3">Tambah Pelanggan</PrimaryButton>
         </form>
       </main>
