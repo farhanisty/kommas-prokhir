@@ -16,7 +16,7 @@ export default function SearchBar() {
         <div className="relative">
           <input
             ref={inputSearchRef}
-            className="pl-3 py-2 bg-secondary border rounded-lg"
+            className="pl-3 py-3 bg-secondary border rounded-lg"
             placeholder="Cari nama pelanggan"
             type="text"
           />

@@ -6,7 +6,7 @@ import FootBarItem from "./FootBarItem.jsx";
 
 export default function FootBar() {
   return (
-    <footer className="bg-background absolute bottom-0 left-0 right-0 border-t h-[60px] flex items-center px-10">
+    <footer className="bg-background fixed bottom-0 left-0 right-0 border-t h-[60px] flex items-center px-10">
       <ul className="flex justify-between w-full">
         <FootBarItem link="/">
           <FaHome />
