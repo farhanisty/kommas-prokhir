@@ -16,9 +16,24 @@ export default function AddOrder() {
         <form>
           <div className="flex flex-col gap-5">
             <InputForm
-            // placeholder="Masukkan nama"
-            // type="text"
-            // label="Nama Pelanggan"
+             placeholder="Masukkan nama"
+             type="text"
+             label="Nama Pelanggan"
+            />
+            <InputForm
+             placeholder="Masukkan jenis pesanan"
+             type="text"
+             label="Jenis Pesanan"
+            />
+            <InputForm
+             placeholder="Masukkan Tenggat Waktu"
+             type="date"
+             label="Tenggat Waktu"
+            />
+            <InputForm
+             placeholder="Masukkan catatan"
+             type="text"
+             label="Catatan Pesanan"
             />
           </div>
           <PrimaryButton className="mt-3">Tambah Pesanan</PrimaryButton>
