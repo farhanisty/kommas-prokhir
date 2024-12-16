@@ -1,10 +1,9 @@
 import FootBar from "./../components/FootBar.jsx";
-
-export default function Home() {
+export default function Inventory() {
   return (
     <>
-      <h1>home</h1>
-      <FootBar></FootBar>
+      <h1>Inventory</h1>
+      <FootBar />
     </>
   );
 }
