@@ -55,14 +55,23 @@ export default function Order() {
       <MainLayout>
         <HeaderTitle>Daftar Pelanggan</HeaderTitle>
         <SearchBar></SearchBar>
-        {customers.length === 0 ? (
-          <OrderEmptyPage />
-        ) : (
-          <OrderPage customers={customers} />
-        )}
-        <button className="text-primary fixed bottom-[70px] bg-primary bg-opacity-10 rounded-full w-[80%] py-3 flex items-center gap-3 justify-center left-1/2 -translate-x-1/2">
-          <CiCirclePlus /> Tambah Pelanggan
-        </button>
+        <div
+          className=""
+          style={{
+            height: "calc(100% - 200px)",
+          }}
+        >
+          {customers.length === 0 ? (
+            <OrderEmptyPage />
+          ) : (
+            <OrderPage customers={customers} />
+          )}
+          <div className="h-[15%] flex justify-center items-center">
+            <button className="text-primary bg-primary bg-opacity-10 rounded-full w-[80%] py-3 flex items-center gap-3 justify-center">
+              <CiCirclePlus /> Tambah Pelanggan
+            </button>
+          </div>
+        </div>
       </MainLayout>
       <FootBar />
     </>
@@ -88,7 +97,7 @@ function OrderPage({ customers }) {
     <div
       className="overflow-y-scroll"
       style={{
-        height: "calc(100% - 195px)",
+        height: "90%",
       }}
     >
       <ul className="px-5 flex gap-3 flex-col">
