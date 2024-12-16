@@ -5,6 +5,7 @@ import MainLayout from "./../layouts/MainLayout.jsx";
 import CustomerItem from "./../components/CustomerItem.jsx";
 import { CiCirclePlus } from "react-icons/ci";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Order() {
   const [customers, setCustomer] = useState([]);
@@ -67,9 +68,12 @@ export default function Order() {
             <OrderPage customers={customers} />
           )}
           <div className="h-[15%] flex justify-center items-center">
-            <button className="text-primary bg-primary bg-opacity-10 rounded-full w-[80%] py-3 flex items-center gap-3 justify-center">
+            <Link
+              to="/add-customer"
+              className="text-primary bg-primary bg-opacity-10 rounded-full w-[80%] py-3 flex items-center gap-3 justify-center"
+            >
               <CiCirclePlus /> Tambah Pelanggan
-            </button>
+            </Link>
           </div>
         </div>
       </MainLayout>

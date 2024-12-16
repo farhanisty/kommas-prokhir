@@ -1,13 +1,15 @@
 import { FaSearch } from "react-icons/fa";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export default function SearchBar() {
   const searchFormRef = useRef(null);
   const inputSearchRef = useRef(null);
+  const [coba, setCoba] = useState(false);
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     console.log(inputSearchRef.current.value);
+    setCoba(true);
   };
 
   return (
@@ -24,6 +26,7 @@ export default function SearchBar() {
             <FaSearch />
           </button>
         </div>
+        {coba && <h1>hello world</h1>}
       </form>
     </div>
   );
