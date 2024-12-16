@@ -9,7 +9,18 @@ export default function AddCustomer() {
           type="text"
           label="Nama Pelanggan"
         />
+        <InputForm
+          placeholder="Masukkan Nomor Whatsapp"
+          type="text"
+          label="Nomor Whatsapp "
+        />
+      <InputForm
+          placeholder="Masukkan Alamat"
+          type="text"
+          label="Alamat"
+        />
       </form>
+
     </main>
   );
 }
