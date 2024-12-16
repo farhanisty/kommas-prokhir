@@ -22,7 +22,7 @@ export default function AddCustomer() {
             />
             <InputForm
               placeholder="Masukkan Nomor Whatsapp"
-              type="text"
+              type="number"
               label="Nomor Whatsapp "
             />
             <InputForm
