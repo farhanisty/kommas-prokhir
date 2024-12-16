@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function CustomerItem({ customer }) {
   return (
     <li className="bg-white rounded-lg shadow-md p-3">
@@ -13,9 +14,12 @@ export default function CustomerItem({ customer }) {
           <a>Edit Pesanan</a>
           <a>Edit Status</a>
         </div>
-        <button className="w-full bg-primary bg-opacity-10 text-primary rounded-full mt-3 py-2">
+        <Link
+          to="/add-order"
+          className="w-full bg-primary inline-block text-center bg-opacity-10 text-primary rounded-full mt-3 py-2"
+        >
           Tambah Pesanan
-        </button>
+        </Link>
       </div>
     </li>
   );
