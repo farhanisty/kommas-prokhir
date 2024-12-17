@@ -5,6 +5,7 @@ import Locker from "./pages/Locker.jsx";
 import Inventory from "./pages/Inventory.jsx";
 import AddCustomer from "./pages/AddCustomer.jsx";
 import AddOrder from "./pages/AddOrder.jsx";
+import LockerOrder from "./pages/LockerOrder.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/inventory" element={<Inventory />}></Route>
         <Route path="/add-customer" element={<AddCustomer />}></Route>
         <Route path="/add-order" element={<AddOrder />}></Route>
+        <Route path="/locker/order/:id" element={<LockerOrder />}></Route>
       </Routes>
     </BrowserRouter>
   );
